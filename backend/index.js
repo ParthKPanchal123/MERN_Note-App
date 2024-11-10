@@ -10,6 +10,7 @@ dotenv.config();
 
 const app = express();
 
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({ origin: ['http://localhost:3000'], credentials: true }));
@@ -17,6 +18,7 @@ app.use(cors({ origin: ['http://localhost:3000'], credentials: true }));
 // Routes
 app.use('/api/user', user_router); // Use user routes for /api/user
 app.use('/api/note', note_router); // Use note routes for /api/note
+
 
 // Connect to MongoDB
 app.listen(3001, () => {
