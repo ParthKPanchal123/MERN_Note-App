@@ -6,7 +6,7 @@ const { user_router } = require('./src/routes/user'); // Correct import of user 
 const { note_router } = require('./src/routes/note'); // Correct import of note router
 const cookieParser = require('cookie-parser');
 
-dotenv.config();
+// dotenv.config();
 
 const app = express();
 
